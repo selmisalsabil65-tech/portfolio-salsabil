@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salsabil Selmi - Étudiante en Télécommunications</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        .section-padding {
+            padding: 5rem 0;
+        }
+        
+        @media (max-width: 768px) {
+            .mobile-padding {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/90 backdrop-blur-sm z-50 border-b border-gray-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-xl font-bold gradient-text">Salsabil Selmi</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#formation" class="text-gray-600 hover:text-purple-600 transition-colors duration-300">Formation</a>
+                    <a href="#experience" class="text-gray-600 hover:text-purple-600 transition-colors duration-300">Expérience</a>
+                    <a href="#competences" class="text-gray-600 hover:text-purple-600 transition-colors duration-300">Compétences</a>
+                    <a href="#projets" class="text-gray-600 hover:text-purple-600 transition-colors duration-300">Projets</a>
+                    <a href="#contact" class="text-gray-600 hover:text-purple-600 transition-colors duration-300">Contact</a>
+                </div>
+                <button class="md:hidden text-gray-600">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="min-h-screen flex items-center justify-center gradient-bg text-white pt-16 mobile-padding">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+            <!-- Profile Photo -->
+            <div class="w-48 h-48 mx-auto mb-8 rounded-full overflow-hidden border-4 border-white shadow-2xl">
+                <img src="images/sal.jpeg" alt="Salsabil Selmi" class="w-full h-full object-cover">
+            </div>
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-6">Salsabil Selmi</h1>
+            <p class="text-xl md:text-2xl text-purple-100 mb-8 font-medium">Étudiante en Télécommunications</p>
+            <p class="text-lg md:text-xl text-purple-200 max-w-2xl mx-auto leading-relaxed mb-12">
+                Passionnée par les nouvelles technologies et les réseaux. Curieuse, sérieuse et motivée, 
+                je cherche à renforcer mes compétences à travers des stages et projets pratiques.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#contact" class="bg-white text-purple-600 hover:bg-purple-50 px-8 py-4 rounded-lg font-semibold transition-all duration-300 shadow-lg">
+                    📬 Me Contacter
+                </a>
+                <a href="#projets" class="border border-white text-white hover:bg-white hover:text-purple-600 px-8 py-4 rounded-lg font-semibold transition-all duration-300">
+                    🚀 Voir mes Projets
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Formation Section -->
+    <section id="formation" class="section-padding bg-white mobile-padding">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center gradient-text">Formation</h2>
+            
+            <div class="space-y-8">
+                <!-- Current Studies -->
+                <div class="bg-gray-50 rounded-2xl p-6 card-hover border border-gray-200">
+                    <div class="flex items-start gap-4">
+                        <div class="text-2xl">🎓</div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Étudiante en Télécommunications</h3>
+                            <p class="text-lg text-gray-600 mb-1">ISITCom Sousse</p>
+                            <p class="text-gray-500">Depuis 2023</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Baccalaureate -->
+                <div class="bg-gray-50 rounded-2xl p-6 card-hover border border-gray-200">
+                    <div class="flex items-start gap-4">
+                        <div class="text-2xl">📚</div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Baccalauréat Sciences Expérimentales</h3>
+                            <p class="text-lg text-gray-600 mb-1">Lycée Mahmoud Messadi Sbikha</p>
+                            <p class="text-gray-500">2023</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section-padding bg-gray-50 mobile-padding">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center gradient-text">Expérience</h2>
+            
+            <div class="bg-white rounded-2xl p-6 card-hover border border-gray-200">
+                <div class="flex items-start gap-4">
+                    <div class="text-2xl">💼</div>
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Stage – Tunisie Télécom</h3>
+                        <p class="text-lg text-gray-600 mb-1">Juin 2024</p>
+                        <p class="text-gray-700 leading-relaxed">
+                            Découverte du domaine des télécommunications et application des notions apprises.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section-padding bg-white mobile-padding">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center gradient-text">Certifications</h2>
+            
+            <div class="bg-gray-50 rounded-2xl p-6 card-hover border border-gray-200">
+                <div class="flex items-start gap-4">
+                    <div class="text-2xl">🏆</div>
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Cisco CCNA 1 – Introduction to Networks</h3>
+                        <p class="text-lg text-gray-600 mb-1">2025</p>
+                        <p class="text-gray-700 leading-relaxed">
+                            Bases des réseaux informatiques, adressage IP et configuration de routeurs/commutateurs Cisco.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="competences" class="section-padding bg-gray-50 mobile-padding">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center gradient-text">Compétences</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Technical Skills -->
+                <div class="bg-white rounded-2xl p-6 card-hover border border-gray-200">
+                    <h3 class="text-xl font-bold text-gray-800 mb-6 flex items-center gap-2">
+                        <span>💻</span> Compétences Techniques
+                    </h3>
+                    <div class="space-y-4">
+                        <div>
+                            <h4 class="font-semibold text-gray-700 mb-2">Réseaux & Télécoms</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm">Configuration de base</span>
+                                <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm">Routage</span>
+                                <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm">Fibre optique</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-700 mb-2">Informatique</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm">Word</span>
+                                <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm">Excel</span>
+                                <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm">PowerPoint</span>
+                                <span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm">Python</span>
+                                <span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm">Java</span>
+                                <span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm">C</span>
+                                <span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm">HTML/CSS</span>
+                                <span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm">JavaScript</span>
+                                <span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm">SQL</span>
+                                <span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm">PHP</span>
+                                <span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm">Linux</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Soft Skills & Languages -->
+                <div class="bg-white rounded-2xl p-6 card-hover border border-gray-200">
+                    <h3 class="text-xl font-bold text-gray-800 mb-6 flex items-center gap-2">
+                        <span>🌟</span> Soft Skills & Langues
+                    </h3>
+                    <div class="space-y-4">
+                        <div>
+                            <h4 class="font-semibold text-gray-700 mb-2">Soft Skills</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-orange-100 text-orange-700 px-3 py-1 rounded-full text-sm">Communication</span>
+                                <span class="bg-orange-100 text-orange-700 px-3 py-1 rounded-full text-sm">Travail en équipe</span>
+                                <span class="bg-orange-100 text-orange-700 px-3 py-1 rounded-full text-sm">Sens du service</span>
+                                <span class="bg-orange-100 text-orange-700 px-3 py-1 rounded-full text-sm">Organisation</span>
+                                <span class="bg-orange-100 text-orange-700 px-3 py-1 rounded-full text-sm">Adaptabilité</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-700 mb-2">Langues</h4>
+                            <div class="space-y-2">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-gray-600">Arabe</span>
+                                    <span class="text-sm text-gray-500">Maternelle</span>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-gray-600">Français</span>
+                                    <span class="text-sm text-gray-500">Bon</span>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-gray-600">Anglais</span>
+                                    <span class="text-sm text-gray-500">Moyen</span>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-gray-600">Italien</span>
+                                    <span class="text-sm text-gray-500">Intermédiaire</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projets" class="section-padding bg-white mobile-padding">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center gradient-text">Projets</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Web Project -->
+                <div class="bg-gray-50 rounded-2xl p-6 card-hover border border-gray-200">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="text-2xl">🌐</div>
+                        <h3 class="text-xl font-bold text-gray-800">Site Web 'dbch'</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        Développement d'un site web utilisant HTML, CSS, JavaScript et PHP.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm">HTML</span>
+                        <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm">CSS</span>
+                        <span class="bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-sm">JavaScript</span>
+                        <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm">PHP</span>
+                    </div>
+                </div>
+
+                <!-- Mobile App -->
+                <div class="bg-gray-50 rounded-2xl p-6 card-hover border border-gray-200">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="text-2xl">📱</div>
+                        <h3 class="text-xl font-bold text-gray-800">Application Mobile</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        Développement d'une application mobile Android avec Android Studio.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm">Android Studio</span>
+                        <span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm">Java</span>
+                        <span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm">Mobile</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interests Section -->
+    <section id="interests" class="section-padding bg-gray-50 mobile-padding">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center gradient-text">Centres d'Intérêt</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Club Activity -->
+                <div class="bg-white rounded-2xl p-6 card-hover border border-gray-200">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="text-2xl">👥</div>
+                        <h3 class="text-xl font-bold text-gray-800">Club ISITCOM ATAST</h3>
+                    </div>
+                    <p class="text-gray-600">
+                        Membre du club (2024–2025) - Participation à des projets techniques et à des événements technologiques.
+                    </p>
+                </div>
+
+                <!-- Personal Interests -->
+                <div class="bg-white rounded-2xl p-6 card-hover border border-gray-200">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="text-2xl">📖</div>
+                        <h3 class="text-xl font-bold text-gray-800">Intérêts Personnels</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm">Lecture</span>
+                        <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm">Nouvelles technologies</span>
+                        <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm">Engagement associatif</span>
+                        <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm">Design numérique</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding bg-white mobile-padding">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center gradient-text">Contact</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Contact Info -->
+                <div class="bg-gray-50 rounded-2xl p-6 card-hover border border-gray-200">
+                    <h3 class="text-xl font-bold text-gray-800 mb-6">Informations de Contact</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3">
+                            <span class="text-xl">📍</span>
+                            <span class="text-gray-600">Sahloul, Sousse</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span class="text-xl">📞</span>
+                            <span class="text-gray-600">21 313 498</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span class="text-xl">📧</span>
+                            <a href="mailto:selmisalsabil65@gmail.com" class="text-gray-600 hover:text-purple-600 transition-colors">
+                                selmisalsabil65@gmail.com
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- About Me -->
+                <div class="bg-gray-50 rounded-2xl p-6 card-hover border border-gray-200">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">À Propos de Moi</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Profil étudiante en télécommunications à l'ISITCom Sousse, passionnée par les nouvelles technologies 
+                        et les réseaux. Curieuse, sérieuse et motivée, je cherche à renforcer mes compétences à travers des 
+                        stages et projets pratiques, tout en développant mon esprit d'équipe et mon sens de l'adaptation.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-8 mobile-padding">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 text-center">
+            <p class="text-gray-400 text-lg">© 2025 Salsabil Selmi - Étudiante en Télécommunications</p>
+            <p class="text-gray-500 text-sm mt-2">Passionnée par l'innovation technologique</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Mobile menu toggle
+        document.querySelector('button.md\\:hidden')?.addEventListener('click', function() {
+            const nav = document.querySelector('.hidden.md\\:flex');
+            nav.classList.toggle('hidden');
+            nav.classList.toggle('flex');
+            nav.classList.toggle('flex-col');
+            nav.classList.toggle('absolute');
+            nav.classList.toggle('top-16');
+            nav.classList.toggle('left-0');
+            nav.classList.toggle('right-0');
+            nav.classList.toggle('bg-white');
+            nav.classList.toggle('p-4');
+            nav.classList.toggle('space-y-4');
+        });
+    </script>
+
+</body>
+</html>
